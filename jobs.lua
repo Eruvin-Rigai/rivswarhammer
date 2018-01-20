@@ -96,7 +96,7 @@ category = "Imperial Guard",
 
 })
 
-TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Field Chirurgeon", {
+TEAM_GUARDSMAN = DarkRP.createJob("Field Chirurgeon", {
 
 color = Color(20, 150, 20, 255),
 
@@ -124,7 +124,7 @@ category = "Imperial Guard",
 
 })
 
-TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Dead Eye", {
+TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Sniper", {
 
 color = Color(20, 150, 20, 255),
 
@@ -192,7 +192,7 @@ weapons = {"m9k_m3","m9k_knife","weapon_flamer","m9k_suicide_bomb","m9k_proxy_mi
 
 command = "IGCE",
 
-max = 0,
+max = 4,
 
 salary = 250,
 
@@ -276,7 +276,7 @@ weapons = {"m9k_m249lmg","m9k_knife","weapon_wh40k_laspistol"},
 
 command = "IGSS",
 
-max = 0,
+max = 4,
 
 salary = 250,
 
@@ -292,7 +292,7 @@ category = "Imperial Guard",
 
 })
 
-TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Pathfinders", {
+TEAM_GUARDSMAN = DarkRP.createJob("Imperial Guard Dead Eyes", {
 
 color = Color(20, 150, 20, 255),
 
@@ -304,7 +304,7 @@ weapons = {"m9k_m98b","weapon_wh40k_laspistol","m9k_knife","weapon_camo"},
 
 command = "IGPF",
 
-max = 0,
+max = 3,
 
 salary = 250,
 
@@ -332,7 +332,7 @@ weapons = {"weapon_wh40k_lasgun","weapon_wh40k_laspistol","m9k_knife","m9k_m61_f
 
 command = "IGOP",
 
-max = 0,
+max = 5,
 
 salary = 300,
 
@@ -360,7 +360,7 @@ weapons = {"weapon_stunstick","weapon_wh40k_lasgun","weapon_wh40k_laspistol","m9
 
 command = "IGSF",
 
-max = 0,
+max = 5,
 
 salary = 500,
 
@@ -384,11 +384,11 @@ model = "models/player/kogg/lord_general.mdl",
 
 description = [[The Lord General is assigned to oversee theatres of war, commanding multiple regiments and imperial assets.]],
 
-weapons = {"weapon_powersword","weapon_40k_plasma_pistol_b","weapon_bolternomral","weapon_camo"},
+weapons = {"weapon_powersword","weapon_40k_plasma_pistol","weapon_bolternomral","weapon_camo"},
 
 command = "IGCOM",
 
-max = 0,
+max = 1,
 
 salary = 1000,
 
@@ -783,11 +783,11 @@ model = "models/player/sisters/sisterspm/sisteradalie.mdl",
 
 description = [[Elite units of the Adepta Sororitas.]],
 
-weapons = {"weapon_strombolter","weapon_meltagun","weapon_chainsword","weapon_flamer","weapon_40k_plasma_pistol_b"},
+weapons = {"weapon_strombolter","weapon_meltagun","weapon_chainsword","weapon_flamer","weapon_40k_plasma_pistol"},
 
 command = "SisterC",
 
-max = 0,
+max = 4,
 
 salary = 100,
 
@@ -811,7 +811,7 @@ model = "models/gonzo/legatine/legatine.mdl",
 
 description = [[ all-female division of the Imperial Cult's ecclesiastical Adepta known as the Ecclesiarchy or, more formally, as the Adeptus Ministorum. The Sisterhood's Orders Militant serve as the Ecclesiarchy's military arm, mercilessly rooting out corruption and heresy within humanity and every organisation of the Adeptus Terra.]],
 
-weapons = {"weapon_meltagun","weapon_flamer","weapon_40k_plasma_pistol_b","powersword","weapon_strombolter"},
+weapons = {"weapon_meltagun","weapon_flamer","weapon_40k_plasma_pistol","powersword","weapon_strombolter"},
 
 command = "SisterCom",
 
@@ -953,7 +953,7 @@ model = "models/gonzo/imperialfistscout/imperialfistscout.mdl",
 
 description = [[The Imperial Fists are one of the First Founding Chapters of the Space Marines and were originally the VII Legion of the Legiones Astartes raised by the Emperor Himself.]],
 
-weapons = {"weapon_imp_lasgun_long_hs_b","weapon_wh40k_boltpistol","weapon_camo"},
+weapons = {"m9k_barret_m82","weapon_blotpistol","weapon_camo","weapon_doimarinebayonet"},
 
 command = "scout",
 
@@ -969,13 +969,13 @@ hasLicense = false,
 
 candemote = false,
 
-modelScale = 1.2,
+modelScale = 1.09,
 
 category = "Imperial Fist Chapter",
 
 })
 
-TEAM_IF = DarkRP.createJob("Imperial Fist Brother", {
+TEAM_IF = DarkRP.createJob("Imperial Fist Battle-Brother", {
 
 color = Color(255, 199, 0, 255),
 
@@ -983,7 +983,7 @@ model = "models/gonzo/imperialfists/ifspacemarine/ifspacemarine.mdl",
 
 description = [[The Imperial Fists are one of the First Founding Chapters of the Space Marines and were originally the VII Legion of the Legiones Astartes raised by the Emperor Himself.]],
 
-weapons = {"weapon_40k_bolter_g","weapon_wh40k_boltpistol","weapon_chainsword"},
+weapons = {"weapon_wh40k_bolter_normal","weapon_doimarinebayonet"},
 
 command = "Fist",
 
@@ -1002,6 +1002,44 @@ candemote = false,
 modelScale = 1.2,
 
 category = "Imperial Fist Chapter",
+            
+  PlayerSpawn = function(ply)
+        ply:SetMaxHealth(400)
+        ply:SetHealth(400)
+        ply:SetArmor(250)
+    end
+
+})
+
+TEAM_IF = DarkRP.createJob("Imperial Fist Sergeant", {
+
+color = Color(255, 199, 0, 255),
+
+model = "models/gonzo/imperialfists/ifspacemarine/ifspacemarine.mdl",
+
+description = [[The Imperial Fists are one of the First Founding Chapters of the Space Marines and were originally the VII Legion of the Legiones Astartes raised by the Emperor Himself.]],
+
+weapons = {"weapon_blotpistol","weapon_chainsword","weapon_wh40k_bolter_normal"},
+
+command = "FistS",
+
+max = 0,
+
+salary = 100,
+
+admin = 0,
+
+vote = false,
+
+hasLicense = false,
+
+candemote = false,
+
+modelScale = 1.2,
+
+category = "Imperial Fist Chapter",
+            
+
 
 })
 
@@ -1013,7 +1051,7 @@ model = "models/gonzo/imperialfists/ifapothecary/ifapothecary.mdl",
 
 description = [[The Imperial Fists are one of the First Founding Chapters of the Space Marines and were originally the VII Legion of the Legiones Astartes raised by the Emperor Himself.]],
 
-weapons = {"weapon_40k_bolter_g","weapon_wh40k_boltpistol","weapon_chainsword","weapon_medkit"},
+weapons = {"weapon_blotpistol","weapon_medkit","weapon_wh40k_bolter_normal"},
 
 command = "Apo",
 
@@ -1043,7 +1081,7 @@ model = "models/gonzo/imperialfists/ifdevastator/ifdevastator.mdl",
 
 description = [[The Imperial Fists are one of the First Founding Chapters of the Space Marines and were originally the VII Legion of the Legiones Astartes raised by the Emperor Himself.]],
 
-weapons = {"weapon_wh40k_heavybolter","weapon_40k_bolter_g","weapon_wh40k_boltpistol","weapon_chainsword"},
+weapons = {"weapon_wh40k_heavybolter","weapon_blotpistol","weapon_doimarinebayonet"},
 
 command = "Devastator",
 
@@ -1073,7 +1111,7 @@ model = "models/gonzo/imperialfists/ifchaplain/ifchaplain.mdl",
 
 description = [[The Imperial Fists are one of the First Founding Chapters of the Space Marines and were originally the VII Legion of the Legiones Astartes raised by the Emperor Himself.]],
 
-weapons = {"weapon_bur_magic","weapon_40k_bolter_g","weapon_wh40k_boltpistol","weapon_poweraxe"},
+weapons = {"weapon_40k_plasma_pistol","weapon_poweraxe"},
 
 command = "Chaplain",
 
@@ -1103,7 +1141,7 @@ model = "models/gonzo/imperialfists/ifchaptermaster/ifchaptermaster.mdl",
 
 description = [[The Imperial Fists are one of the First Founding Chapters of the Space Marines and were originally the VII Legion of the Legiones Astartes raised by the Emperor Himself.]],
 
-weapons = {"weapon_40k_bolter_g","weapon_wh40k_boltpistol","weapon_chainsword"},
+weapons = {"weapon_40k_plasma_pistol","powersword"},
 
 command = "FistCom",
 
