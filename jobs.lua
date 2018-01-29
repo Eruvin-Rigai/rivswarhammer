@@ -93,6 +93,10 @@ hasLicense = false,
 candemote = false,
 
 category = "Imperial Guard",
+            
+    PlayerSpawn = function(ply)
+    ply:SetBodygroup(1, 5)
+    end
 
 })
 
@@ -121,6 +125,13 @@ hasLicense = false,
 candemote = false,
 
 category = "Imperial Guard",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(120)
+        ply:SetHealth(120)
+       
+    end
+
 
 })
 
@@ -205,6 +216,11 @@ hasLicense = false,
 candemote = false,
 
 category = "Imperial Guard",
+            
+    PlayerSpawn = function(ply)
+    ply:SetArmor(50)
+    end
+
 
 })
 
@@ -373,6 +389,13 @@ hasLicense = false,
 candemote = false,
 
 category = "Imperial Guard",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(100)
+    end
+
 
 })
 
@@ -384,7 +407,7 @@ model = "models/player/kogg/lord_general.mdl",
 
 description = [[The Lord General is assigned to oversee theatres of war, commanding multiple regiments and imperial assets.]],
 
-weapons = {"weapon_powersword","weapon_40k_plasma_pistol","weapon_bolternomral","weapon_camo"},
+weapons = {"weapon_powersword","weapon_40k_plasma_pistol","weapon_bolternomral"},
 
 command = "IGCOM",
 
@@ -401,6 +424,13 @@ hasLicense = false,
 candemote = false,
 
 category = "Imperial Guard",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(200)
+        ply:SetHealth(200)
+        ply:SetArmor(100)
+    end
+
 
 })
 
@@ -431,6 +461,13 @@ hasLicense = false,
 candemote = false,
 
 category = "Death Korps of Krieg",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+      
+    end
+ 
 
 })
 
@@ -459,6 +496,13 @@ hasLicense = false,
 candemote = false,
 
 category = "Death Korps of Krieg",
+            
+         PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(100)
+    end
+
 
 })
 
@@ -487,6 +531,13 @@ hasLicense = false,
 candemote = false,
 
 category = "Death Korps of Krieg",
+            
+         PlayerSpawn = function(ply)
+        ply:SetMaxHealth(130)
+        ply:SetHealth(130)
+       
+    end
+
 
 })
 
@@ -498,7 +549,7 @@ model = "models/player/dk/dk_pm/guardsmanplayer.mdl",
 
 description = [[The Death Korps employ these shock troopers in vanguard assaults. Adept in taking enemy positions.]],
 
-weapons = {"weapon_lasgun","weapon_doietoolger","weapon_flamer","weapon_frag"},
+weapons = {"weapon_lasgun","weapon_doietoolger","weapon_flamer","zeus_smokegranade","zeus_flashbang"},
 
 command = "DKA",
 
@@ -515,6 +566,13 @@ hasLicense = false,
 candemote = false,
 
 category = "Death Korps of Krieg",
+            
+                PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+    
+    end
+
 
 })
 
@@ -543,6 +601,12 @@ hasLicense = false,
 candemote = false,
 
 category = "Death Korps of Krieg",
+                PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+    
+    end
+
 
 })
 
@@ -571,6 +635,12 @@ hasLicense = false,
 candemote = false,
 
 category = "Death Korps of Krieg",
+          
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+        ply:SetArmor(50)
+    end
 
 })
 
@@ -599,6 +669,13 @@ hasLicense = false,
 candemote = false,
 
 category = "Death Korps of Krieg",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(200)
+        ply:SetHealth(200)
+        ply:SetArmor(100)
+    end
+
 
 })
 
@@ -611,7 +688,7 @@ model = "models/gonzo/8thnecromunda/male/male.mdl",
 
 description = [[Galactic police force of the Imperium of Man, responsible for enforcing Imperial Law.]],
 
-weapons = {"heavyknightshield","weapon_wh40k_laspistol","realrbn_tazer","weapon_stunstick","arrest_stick","unarrest_stick"},
+weapons = {"heavyknightshield","weapon_wh40k_laspistol","realrbn_tazer","weapon_stunstick","arrest_stick","unarrest_stick","zeus_flashbang"},
 
 command = "Sec",
 
@@ -656,6 +733,13 @@ hasLicense = false,
 candemote = false,
 
 category = "Security Regiment",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(200)
+        ply:SetHealth(200)
+        ply:SetArmor(100)
+    end
+
 
 })
 
@@ -686,6 +770,12 @@ hasLicense = false,
 candemote = false,
 
 category = "Sisters of Battle",
+            
+        layerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end
 
 })
 
@@ -714,6 +804,12 @@ hasLicense = false,
 candemote = false,
 
 category = "Sisters of Battle",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end
 
 })
 
@@ -743,6 +839,12 @@ hasLicense = false,
 candemote = false,
 
 category = "Sisters of Battle",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(150)
+    end
 
 })
 
@@ -772,6 +874,11 @@ candemote = false,
 
 category = "Sisters of Battle",
 
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(175)
+        ply:SetHealth(175)
+        ply:SetArmor(150)
+    end
 })
 
 
@@ -800,6 +907,12 @@ hasLicense = false,
 candemote = false,
 
 category = "Sisters of Battle",
+        
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(200)
+        ply:SetHealth(200)
+        ply:SetArmor(150)
+    end
 
 })
 
@@ -828,10 +941,16 @@ hasLicense = false,
 candemote = false,
 
 category = "Sisters of Battle",
+            
+         PlayerSpawn = function(ply)
+        ply:SetMaxHealth(250)
+        ply:SetHealth(250)
+        ply:SetArmor(150)
+    end
 
 })
 
-TEAM_DR = DarkRP.createJob("Desert Raider", {
+TEAM_DR = DarkRP.createJob("Desert Raider Guardsman", {
 
 color = Color(135, 119, 59, 255),
 
@@ -842,6 +961,34 @@ description = [[Regimentum of the Astra Militarum raised from the Desert World o
 weapons = {"m9k_svt40","weapon_wh40k_laspistol","m9k_machete"},
 
 command = "raider",
+
+max = 0,
+
+salary = 100,
+
+admin = 0,
+
+vote = false,
+
+hasLicense = false,
+
+candemote = false,
+
+category = "Desert Raiders",
+
+})
+
+TEAM_DR = DarkRP.createJob("Desert Raider Recon", {
+
+color = Color(135, 119, 59, 255),
+
+model = "models/gonzo/tallarndesertraiders/enlisted/enlisted.mdl",
+
+description = [[Regimentum of the Astra Militarum raised from the Desert World of Tallarn whose soldiers are highly skilled at desert and mobile armoured warfare. The Desert Raiders are mobile guerrilla fighters, evasive and opportunistic..]],
+
+weapons = {"m9k_dragunov","weapon_wh40k_laspistol","m9k_machete","weapon_camo"},
+
+command = "raiderre",
 
 max = 0,
 
@@ -884,6 +1031,12 @@ hasLicense = false,
 candemote = false,
 
 category = "Desert Raiders",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(125)
+        ply:SetHealth(125)
+       
+    end
 
 })
 
@@ -912,7 +1065,14 @@ hasLicense = false,
 candemote = false,
 
 category = "Desert Raiders",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(150)
+        ply:SetHealth(150)
+        ply:SetArmor(75)
+    end
 
+            
 })
 
 TEAM_DR = DarkRP.createJob("Desert Raider Commander", {
@@ -940,6 +1100,12 @@ hasLicense = false,
 candemote = false,
 
 category = "Desert Raiders",
+            
+        PlayerSpawn = function(ply)
+        ply:SetMaxHealth(200)
+        ply:SetHealth(200)
+        ply:SetArmor(100)
+    end
 
 })
 
@@ -972,6 +1138,12 @@ candemote = false,
 modelScale = 1.09,
 
 category = "Imperial Fist Chapter",
+            
+ PlayerSpawn = function(ply)
+        ply:SetMaxHealth(250)
+        ply:SetHealth(250)
+        ply:SetArmor(100)
+    end
 
 })
 
@@ -1039,7 +1211,11 @@ modelScale = 1.2,
 
 category = "Imperial Fist Chapter",
             
-
+PlayerSpawn = function(ply)
+        ply:SetMaxHealth(450)
+        ply:SetHealth(450)
+        ply:SetArmor(250)
+    end
 
 })
 
@@ -1070,6 +1246,12 @@ candemote = false,
 modelScale = 1.2,
 
 category = "Imperial Fist Chapter",
+          
+PlayerSpawn = function(ply)
+        ply:SetMaxHealth(425)
+        ply:SetHealth(425)
+        ply:SetArmor(250)
+    end
 
 })
 
@@ -1101,6 +1283,11 @@ modelScale = 1.2,
 
 category = "Imperial Fist Chapter",
 
+PlayerSpawn = function(ply)
+        ply:SetMaxHealth(400)
+        ply:SetHealth(400)
+        ply:SetArmor(250)
+    end
 })
 
 TEAM_IF = DarkRP.createJob("Imperial Fist Chaplain", {
@@ -1130,6 +1317,12 @@ candemote = false,
 modelScale = 1.2,
 
 category = "Imperial Fist Chapter",
+            
+            PlayerSpawn = function(ply)
+        ply:SetMaxHealth(500)
+        ply:SetHealth(500)
+        ply:SetArmor(250)
+    end
 
 })
 
@@ -1160,6 +1353,12 @@ candemote = false,
 modelScale = 1.2,
 
 category = "Imperial Fist Chapter",
+            
+            PlayerSpawn = function(ply)
+        ply:SetMaxHealth(600)
+        ply:SetHealth(600)
+        ply:SetArmor(250)
+    end
 
 })
 
